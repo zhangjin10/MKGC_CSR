@@ -1,20 +1,17 @@
 """
-Models package for MKGC-CSR
+MKGC-CSR: Multimodal Knowledge Graph Completion with Causal Semantic Reasoning
 """
 
-from .model import MKGC_CSR, RotatEEmbedding, VisualConceptDictionary, StratifiedCausalAttention, GatedFusion
-from .trainer import MKGC_CSR_Trainer
-from .baseline_models import TransE, DistMult, MKGformer, LAFA
+__version__ = '1.0.0'
+__author__ = 'Binghong Li, Chuxin Xiao'
+__email__ = '15384017902@163.com'
+
+from models import MKGC_CSR
+from data import create_data_loaders
+from utils import setup_logger
 
 __all__ = [
     'MKGC_CSR',
-    'RotatEEmbedding',
-    'VisualConceptDictionary',
-    'StratifiedCausalAttention',
-    'GatedFusion',
-    'MKGC_CSR_Trainer',
-    'TransE',
-    'DistMult',
-    'MKGformer',
-    'LAFA'
+    'create_data_loaders',
+    'setup_logger'
 ]
